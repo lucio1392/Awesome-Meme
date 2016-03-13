@@ -1,0 +1,26 @@
+7. # Xcode
+8. 		9.	#
+9. 		11.	# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+10. 
+11. 
+12. 		15.	## Build generated
+13. 		17.	build/
+14. 		19.	DerivedData
+15. 
+16. 
+17. 		23.	## Various settings
+18. 		25.	*.pbxuser
+19. 		27.	!default.pbxuser
+20. 		29.	*.mode1v3
+21. 		31.	!default.mode1v3
+22. 		33.	*.mode2v3
+23. 		35.	!default.mode2v3
+24. 		37.	*.perspectivev3
+25. 		39.	!default.perspectivev3
+26. 		41.	xcuserdata
+27. 
+28. 
+29. 		45.	## Other
+30. 		47.	*.xccheckout
+31. 		49.	*.moved-aside
+32. 		51.	*.xcuserstate

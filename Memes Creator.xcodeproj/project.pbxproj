@@ -9,12 +9,90 @@
 /* Begin PBXBuildFile section */
 		9D020FD91C7B52B900E4D3F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D020FD81C7B52B900E4D3F1 /* main.m */; };
 		9D020FDC1C7B52B900E4D3F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D020FDB1C7B52B900E4D3F1 /* AppDelegate.m */; };
-		9D020FDF1C7B52B900E4D3F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D020FDE1C7B52B900E4D3F1 /* ViewController.m */; };
 		9D020FE21C7B52B900E4D3F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D020FE01C7B52B900E4D3F1 /* Main.storyboard */; };
 		9D020FE41C7B52B900E4D3F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D020FE31C7B52B900E4D3F1 /* Assets.xcassets */; };
 		9D020FE71C7B52B900E4D3F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D020FE51C7B52B900E4D3F1 /* LaunchScreen.storyboard */; };
 		9D020FF21C7B52B900E4D3F1 /* Memes_CreatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D020FF11C7B52B900E4D3F1 /* Memes_CreatorTests.m */; };
 		9D020FFD1C7B52B900E4D3F1 /* Memes_CreatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D020FFC1C7B52B900E4D3F1 /* Memes_CreatorUITests.m */; };
+		9D0210191C7BFC0800E4D3F1 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0210181C7BFC0800E4D3F1 /* CustomCell.m */; };
+		9D02104E1C7C17B500E4D3F1 /* MemePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D02104D1C7C17B500E4D3F1 /* MemePack.m */; };
+		9D0210511C7C589200E4D3F1 /* EditMeme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0210501C7C589200E4D3F1 /* EditMeme.m */; };
+		9D02109A1C814D8900E4D3F1 /* CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0210991C814D8800E4D3F1 /* CustomLabel.m */; };
+		9D1391A61C8AE3B300F1924F /* ShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D1391A51C8AE3B300F1924F /* ShareView.xib */; };
+		9D1391A81C8B1ECE00F1924F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1391A71C8B1ECE00F1924F /* Social.framework */; };
+		9D1391AA1C8B1EDB00F1924F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1391A91C8B1EDB00F1924F /* MessageUI.framework */; };
+		9D1391AF1C8C73C200F1924F /* ImageLibrary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D1391AE1C8C73C200F1924F /* ImageLibrary.plist */; };
+		9D235A431C869FE60071BB7C /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D235A421C869FE60071BB7C /* KLCPopup.m */; };
+		9D3AC92A1C9449D500BFEC07 /* 10guy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9291C9449D500BFEC07 /* 10guy.jpg */; };
+		9D3AC92E1C944A0100BFEC07 /* advice_dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC92B1C944A0100BFEC07 /* advice_dog.jpg */; };
+		9D3AC92F1C944A0100BFEC07 /* advice_god.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC92C1C944A0100BFEC07 /* advice_god.jpg */; };
+		9D3AC9301C944A0100BFEC07 /* advice_yoda_gives.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC92D1C944A0100BFEC07 /* advice_yoda_gives.jpg */; };
+		9D3AC9341C944A8300BFEC07 /* aint_that_some_shit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9311C944A8300BFEC07 /* aint_that_some_shit.jpg */; };
+		9D3AC9351C944A8300BFEC07 /* alien.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9321C944A8300BFEC07 /* alien.jpg */; };
+		9D3AC9361C944A8300BFEC07 /* angry_head_shake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9331C944A8300BFEC07 /* angry_head_shake.jpg */; };
+		9D3AC93B1C944AA500BFEC07 /* angry_mom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9371C944AA500BFEC07 /* angry_mom.jpg */; };
+		9D3AC93C1C944AA500BFEC07 /* angry_mouth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9381C944AA500BFEC07 /* angry_mouth.jpg */; };
+		9D3AC93D1C944AA500BFEC07 /* angry_shaking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9391C944AA500BFEC07 /* angry_shaking.jpg */; };
+		9D3AC93E1C944AA500BFEC07 /* angry_with_pc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC93A1C944AA500BFEC07 /* angry_with_pc.jpg */; };
+		9D3AC9421C944B0C00BFEC07 /* anti_joke_chicken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC93F1C944B0C00BFEC07 /* anti_joke_chicken.jpg */; };
+		9D3AC9431C944B0C00BFEC07 /* arrow_in_knee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9401C944B0C00BFEC07 /* arrow_in_knee.jpg */; };
+		9D3AC9441C944B0C00BFEC07 /* baby_troll.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9411C944B0C00BFEC07 /* baby_troll.jpg */; };
+		9D3AC9481C944B5000BFEC07 /* bad_advice_cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9451C944B5000BFEC07 /* bad_advice_cat.jpg */; };
+		9D3AC9491C944B5000BFEC07 /* bad_luck_brian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9461C944B5000BFEC07 /* bad_luck_brian.jpg */; };
+		9D3AC94A1C944B5000BFEC07 /* beer_guy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9471C944B5000BFEC07 /* beer_guy.jpg */; };
+		9D3AC94D1C944BF200BFEC07 /* Beyon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC94B1C944BF200BFEC07 /* Beyon.jpg */; };
+		9D3AC94E1C944BF200BFEC07 /* big_smile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC94C1C944BF200BFEC07 /* big_smile.jpg */; };
+		9D3AC9501C944C5200BFEC07 /* blue_y_u_no.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC94F1C944C5200BFEC07 /* blue_y_u_no.jpg */; };
+		9D3AC9531C944C6D00BFEC07 /* brant_rules.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9511C944C6D00BFEC07 /* brant_rules.jpg */; };
+		9D3AC9541C944C6D00BFEC07 /* broken_heart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9521C944C6D00BFEC07 /* broken_heart.jpg */; };
+		9D3AC9571C944CB400BFEC07 /* chemistry_cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9551C944CB400BFEC07 /* chemistry_cat.jpg */; };
+		9D3AC9581C944CB400BFEC07 /* chin_strapping.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9561C944CB400BFEC07 /* chin_strapping.jpg */; };
+		9D3AC95C1C944CEC00BFEC07 /* crazy_rage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9591C944CEC00BFEC07 /* crazy_rage.jpg */; };
+		9D3AC95D1C944CEC00BFEC07 /* creepy_dark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC95A1C944CEC00BFEC07 /* creepy_dark.jpg */; };
+		9D3AC95E1C944CEC00BFEC07 /* cry_pc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC95B1C944CEC00BFEC07 /* cry_pc.jpg */; };
+		9D3AC9611C944D3F00BFEC07 /* crying.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC95F1C944D3F00BFEC07 /* crying.jpg */; };
+		9D3AC9621C944D3F00BFEC07 /* cuteness_overload.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9601C944D3F00BFEC07 /* cuteness_overload.jpg */; };
+		9D3AC9651C944D8700BFEC07 /* depression_dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9631C944D8700BFEC07 /* depression_dog.jpg */; };
+		9D3AC9661C944D8700BFEC07 /* derp_gusta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9641C944D8700BFEC07 /* derp_gusta.jpg */; };
+		9D3AC9691C944DAB00BFEC07 /* desk_flip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9671C944DAB00BFEC07 /* desk_flip.jpg */; };
+		9D3AC96A1C944DAB00BFEC07 /* devil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9681C944DAB00BFEC07 /* devil.jpg */; };
+		9D3AC96C1C944DEE00BFEC07 /* look_from_bottom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC96B1C944DEE00BFEC07 /* look_from_bottom.jpg */; };
+		9D3AC9AF1C94735500BFEC07 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3AC9AE1C94735500BFEC07 /* iAd.framework */; };
+		9D82B3E71C9007C30088E67C /* ImageFromCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82B3E61C9007C30088E67C /* ImageFromCustom.m */; };
+		9D82B3EA1C900EF30088E67C /* ImageCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82B3E91C900EF30088E67C /* ImageCustom.m */; };
+		9D82B4121C90136B0088E67C /* VTPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82B4111C90136B0088E67C /* VTPageViewController.m */; };
+		9D82B4151C9015EC0088E67C /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D82B4141C9015EC0088E67C /* PageViewController.m */; };
+		9D82B4171C9058EA0088E67C /* manuallyData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D82B4161C9058EA0088E67C /* manuallyData.plist */; };
+		9D9856C91C8D696800FB0FCD /* angry_school_boy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856B31C8D696800FB0FCD /* angry_school_boy.jpg */; };
+		9D9856CA1C8D696800FB0FCD /* annoying_childhood_friend.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856B41C8D696800FB0FCD /* annoying_childhood_friend.jpg */; };
+		9D9856CB1C8D696800FB0FCD /* annoying_facebook_girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856B51C8D696800FB0FCD /* annoying_facebook_girl.jpg */; };
+		9D9856CC1C8D696800FB0FCD /* are_you_fucking_kidding_me_clean.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856B61C8D696800FB0FCD /* are_you_fucking_kidding_me_clean.jpg */; };
+		9D9856CD1C8D696800FB0FCD /* art_student_owl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856B71C8D696800FB0FCD /* art_student_owl.jpg */; };
+		9D9856CE1C8D696800FB0FCD /* baby_godfather.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856B81C8D696800FB0FCD /* baby_godfather.jpg */; };
+		9D9856CF1C8D696800FB0FCD /* bear_grylls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856B91C8D696800FB0FCD /* bear_grylls.jpg */; };
+		9D9856D01C8D696800FB0FCD /* bill_oreilly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856BA1C8D696800FB0FCD /* bill_oreilly.jpg */; };
+		9D9856D11C8D696800FB0FCD /* Black.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856BB1C8D696800FB0FCD /* Black.png */; };
+		9D9856D21C8D696800FB0FCD /* black_guy_gun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856BC1C8D696800FB0FCD /* black_guy_gun.jpg */; };
+		9D9856D31C8D696800FB0FCD /* Blond.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856BD1C8D696800FB0FCD /* Blond.png */; };
+		9D9856D41C8D696800FB0FCD /* Blond2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856BE1C8D696800FB0FCD /* Blond2.png */; };
+		9D9856D51C8D696800FB0FCD /* brace_yourselves_x_is_coming.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856BF1C8D696800FB0FCD /* brace_yourselves_x_is_coming.jpg */; };
+		9D9856D61C8D696800FB0FCD /* brad_pitt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C01C8D696800FB0FCD /* brad_pitt.jpg */; };
+		9D9856D71C8D696800FB0FCD /* business_cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C11C8D696800FB0FCD /* business_cat.jpg */; };
+		9D9856D81C8D696800FB0FCD /* butthurt_dweller.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C21C8D696800FB0FCD /* butthurt_dweller.jpg */; };
+		9D9856D91C8D696800FB0FCD /* college_liberal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C31C8D696800FB0FCD /* college_liberal.jpg */; };
+		9D9856DA1C8D696800FB0FCD /* courage_wolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C41C8D696800FB0FCD /* courage_wolf.jpg */; };
+		9D9856DB1C8D696800FB0FCD /* creepy_glasses_guy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C51C8D696800FB0FCD /* creepy_glasses_guy.jpg */; };
+		9D9856DC1C8D696800FB0FCD /* dat_ash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C61C8D696800FB0FCD /* dat_ash.jpg */; };
+		9D9856DD1C8D696800FB0FCD /* dating_site_murderer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C71C8D696800FB0FCD /* dating_site_murderer.jpg */; };
+		9D9856DE1C8D696800FB0FCD /* disaster_girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C81C8D696800FB0FCD /* disaster_girl.jpg */; };
+		9DBCF7641C86E559006F0541 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DBCF7631C86E559006F0541 /* SettingsView.xib */; };
+		9DBCF7671C86E5D1006F0541 /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBCF7661C86E5D1006F0541 /* SettingsView.m */; };
+		9DE0E5981C92BAA7006A14C3 /* CustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0E5971C92BAA7006A14C3 /* CustomTableView.m */; };
+		9DE0E5A21C932808006A14C3 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DE0E5A11C932808006A14C3 /* bg.jpg */; };
+		9DF13C441C8974300046AD15 /* FontsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF13C431C8974300046AD15 /* FontsView.xib */; };
+		9DF13C4B1C89DAC80046AD15 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DF13C461C89DAC80046AD15 /* FontAwesome.ttf */; };
+		9DF13C4C1C89DAC80046AD15 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF13C481C89DAC80046AD15 /* NSString+FontAwesome.m */; };
+		9DF13C4D1C89DAC80046AD15 /* UIButton+Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF13C4A1C89DAC80046AD15 /* UIButton+Bootstrap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +117,6 @@
 		9D020FD81C7B52B900E4D3F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9D020FDA1C7B52B900E4D3F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D020FDB1C7B52B900E4D3F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9D020FDD1C7B52B900E4D3F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9D020FDE1C7B52B900E4D3F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9D020FE11C7B52B900E4D3F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D020FE31C7B52B900E4D3F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D020FE61C7B52B900E4D3F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +127,98 @@
 		9D020FF81C7B52B900E4D3F1 /* Memes CreatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Memes CreatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D020FFC1C7B52B900E4D3F1 /* Memes_CreatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Memes_CreatorUITests.m; sourceTree = "<group>"; };
 		9D020FFE1C7B52B900E4D3F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D0210171C7BFC0800E4D3F1 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		9D0210181C7BFC0800E4D3F1 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		9D02104C1C7C17B500E4D3F1 /* MemePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemePack.h; sourceTree = "<group>"; };
+		9D02104D1C7C17B500E4D3F1 /* MemePack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemePack.m; sourceTree = "<group>"; };
+		9D02104F1C7C589200E4D3F1 /* EditMeme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditMeme.h; sourceTree = "<group>"; };
+		9D0210501C7C589200E4D3F1 /* EditMeme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditMeme.m; sourceTree = "<group>"; };
+		9D0210981C814D8800E4D3F1 /* CustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLabel.h; sourceTree = "<group>"; };
+		9D0210991C814D8800E4D3F1 /* CustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLabel.m; sourceTree = "<group>"; };
+		9D1391A51C8AE3B300F1924F /* ShareView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareView.xib; sourceTree = "<group>"; };
+		9D1391A71C8B1ECE00F1924F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9D1391A91C8B1EDB00F1924F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9D1391AE1C8C73C200F1924F /* ImageLibrary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageLibrary.plist; sourceTree = "<group>"; };
+		9D235A411C869FE60071BB7C /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCPopup.h; sourceTree = "<group>"; };
+		9D235A421C869FE60071BB7C /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCPopup.m; sourceTree = "<group>"; };
+		9D3AC9291C9449D500BFEC07 /* 10guy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10guy.jpg; sourceTree = "<group>"; };
+		9D3AC92B1C944A0100BFEC07 /* advice_dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = advice_dog.jpg; sourceTree = "<group>"; };
+		9D3AC92C1C944A0100BFEC07 /* advice_god.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = advice_god.jpg; sourceTree = "<group>"; };
+		9D3AC92D1C944A0100BFEC07 /* advice_yoda_gives.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = advice_yoda_gives.jpg; sourceTree = "<group>"; };
+		9D3AC9311C944A8300BFEC07 /* aint_that_some_shit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aint_that_some_shit.jpg; sourceTree = "<group>"; };
+		9D3AC9321C944A8300BFEC07 /* alien.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alien.jpg; sourceTree = "<group>"; };
+		9D3AC9331C944A8300BFEC07 /* angry_head_shake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angry_head_shake.jpg; sourceTree = "<group>"; };
+		9D3AC9371C944AA500BFEC07 /* angry_mom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angry_mom.jpg; sourceTree = "<group>"; };
+		9D3AC9381C944AA500BFEC07 /* angry_mouth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angry_mouth.jpg; sourceTree = "<group>"; };
+		9D3AC9391C944AA500BFEC07 /* angry_shaking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angry_shaking.jpg; sourceTree = "<group>"; };
+		9D3AC93A1C944AA500BFEC07 /* angry_with_pc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angry_with_pc.jpg; sourceTree = "<group>"; };
+		9D3AC93F1C944B0C00BFEC07 /* anti_joke_chicken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = anti_joke_chicken.jpg; sourceTree = "<group>"; };
+		9D3AC9401C944B0C00BFEC07 /* arrow_in_knee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arrow_in_knee.jpg; sourceTree = "<group>"; };
+		9D3AC9411C944B0C00BFEC07 /* baby_troll.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = baby_troll.jpg; sourceTree = "<group>"; };
+		9D3AC9451C944B5000BFEC07 /* bad_advice_cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bad_advice_cat.jpg; sourceTree = "<group>"; };
+		9D3AC9461C944B5000BFEC07 /* bad_luck_brian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bad_luck_brian.jpg; sourceTree = "<group>"; };
+		9D3AC9471C944B5000BFEC07 /* beer_guy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beer_guy.jpg; sourceTree = "<group>"; };
+		9D3AC94B1C944BF200BFEC07 /* Beyon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Beyon.jpg; sourceTree = "<group>"; };
+		9D3AC94C1C944BF200BFEC07 /* big_smile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = big_smile.jpg; sourceTree = "<group>"; };
+		9D3AC94F1C944C5200BFEC07 /* blue_y_u_no.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_y_u_no.jpg; sourceTree = "<group>"; };
+		9D3AC9511C944C6D00BFEC07 /* brant_rules.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brant_rules.jpg; sourceTree = "<group>"; };
+		9D3AC9521C944C6D00BFEC07 /* broken_heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = broken_heart.jpg; sourceTree = "<group>"; };
+		9D3AC9551C944CB400BFEC07 /* chemistry_cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chemistry_cat.jpg; sourceTree = "<group>"; };
+		9D3AC9561C944CB400BFEC07 /* chin_strapping.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chin_strapping.jpg; sourceTree = "<group>"; };
+		9D3AC9591C944CEC00BFEC07 /* crazy_rage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = crazy_rage.jpg; sourceTree = "<group>"; };
+		9D3AC95A1C944CEC00BFEC07 /* creepy_dark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = creepy_dark.jpg; sourceTree = "<group>"; };
+		9D3AC95B1C944CEC00BFEC07 /* cry_pc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cry_pc.jpg; sourceTree = "<group>"; };
+		9D3AC95F1C944D3F00BFEC07 /* crying.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = crying.jpg; sourceTree = "<group>"; };
+		9D3AC9601C944D3F00BFEC07 /* cuteness_overload.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cuteness_overload.jpg; sourceTree = "<group>"; };
+		9D3AC9631C944D8700BFEC07 /* depression_dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = depression_dog.jpg; sourceTree = "<group>"; };
+		9D3AC9641C944D8700BFEC07 /* derp_gusta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = derp_gusta.jpg; sourceTree = "<group>"; };
+		9D3AC9671C944DAB00BFEC07 /* desk_flip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = desk_flip.jpg; sourceTree = "<group>"; };
+		9D3AC9681C944DAB00BFEC07 /* devil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = devil.jpg; sourceTree = "<group>"; };
+		9D3AC96B1C944DEE00BFEC07 /* look_from_bottom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = look_from_bottom.jpg; sourceTree = "<group>"; };
+		9D3AC9AE1C94735500BFEC07 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		9D82B3E51C9007C30088E67C /* ImageFromCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFromCustom.h; sourceTree = "<group>"; };
+		9D82B3E61C9007C30088E67C /* ImageFromCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFromCustom.m; sourceTree = "<group>"; };
+		9D82B3E81C900EF30088E67C /* ImageCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCustom.h; sourceTree = "<group>"; };
+		9D82B3E91C900EF30088E67C /* ImageCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCustom.m; sourceTree = "<group>"; };
+		9D82B4101C90136B0088E67C /* VTPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPageViewController.h; sourceTree = "<group>"; };
+		9D82B4111C90136B0088E67C /* VTPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPageViewController.m; sourceTree = "<group>"; };
+		9D82B4131C9015EC0088E67C /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		9D82B4141C9015EC0088E67C /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		9D82B4161C9058EA0088E67C /* manuallyData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = manuallyData.plist; sourceTree = "<group>"; };
+		9D9856B31C8D696800FB0FCD /* angry_school_boy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angry_school_boy.jpg; sourceTree = "<group>"; };
+		9D9856B41C8D696800FB0FCD /* annoying_childhood_friend.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = annoying_childhood_friend.jpg; sourceTree = "<group>"; };
+		9D9856B51C8D696800FB0FCD /* annoying_facebook_girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = annoying_facebook_girl.jpg; sourceTree = "<group>"; };
+		9D9856B61C8D696800FB0FCD /* are_you_fucking_kidding_me_clean.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = are_you_fucking_kidding_me_clean.jpg; sourceTree = "<group>"; };
+		9D9856B71C8D696800FB0FCD /* art_student_owl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = art_student_owl.jpg; sourceTree = "<group>"; };
+		9D9856B81C8D696800FB0FCD /* baby_godfather.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = baby_godfather.jpg; sourceTree = "<group>"; };
+		9D9856B91C8D696800FB0FCD /* bear_grylls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bear_grylls.jpg; sourceTree = "<group>"; };
+		9D9856BA1C8D696800FB0FCD /* bill_oreilly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bill_oreilly.jpg; sourceTree = "<group>"; };
+		9D9856BB1C8D696800FB0FCD /* Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black.png; sourceTree = "<group>"; };
+		9D9856BC1C8D696800FB0FCD /* black_guy_gun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = black_guy_gun.jpg; sourceTree = "<group>"; };
+		9D9856BD1C8D696800FB0FCD /* Blond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blond.png; sourceTree = "<group>"; };
+		9D9856BE1C8D696800FB0FCD /* Blond2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blond2.png; sourceTree = "<group>"; };
+		9D9856BF1C8D696800FB0FCD /* brace_yourselves_x_is_coming.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brace_yourselves_x_is_coming.jpg; sourceTree = "<group>"; };
+		9D9856C01C8D696800FB0FCD /* brad_pitt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brad_pitt.jpg; sourceTree = "<group>"; };
+		9D9856C11C8D696800FB0FCD /* business_cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = business_cat.jpg; sourceTree = "<group>"; };
+		9D9856C21C8D696800FB0FCD /* butthurt_dweller.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = butthurt_dweller.jpg; sourceTree = "<group>"; };
+		9D9856C31C8D696800FB0FCD /* college_liberal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = college_liberal.jpg; sourceTree = "<group>"; };
+		9D9856C41C8D696800FB0FCD /* courage_wolf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = courage_wolf.jpg; sourceTree = "<group>"; };
+		9D9856C51C8D696800FB0FCD /* creepy_glasses_guy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = creepy_glasses_guy.jpg; sourceTree = "<group>"; };
+		9D9856C61C8D696800FB0FCD /* dat_ash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dat_ash.jpg; sourceTree = "<group>"; };
+		9D9856C71C8D696800FB0FCD /* dating_site_murderer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dating_site_murderer.jpg; sourceTree = "<group>"; };
+		9D9856C81C8D696800FB0FCD /* disaster_girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = disaster_girl.jpg; sourceTree = "<group>"; };
+		9DBCF7631C86E559006F0541 /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
+		9DBCF7651C86E5D1006F0541 /* SettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsView.h; sourceTree = "<group>"; };
+		9DBCF7661C86E5D1006F0541 /* SettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsView.m; sourceTree = "<group>"; };
+		9DE0E5961C92BAA7006A14C3 /* CustomTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableView.h; sourceTree = "<group>"; };
+		9DE0E5971C92BAA7006A14C3 /* CustomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableView.m; sourceTree = "<group>"; };
+		9DE0E5A11C932808006A14C3 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		9DF13C431C8974300046AD15 /* FontsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FontsView.xib; sourceTree = "<group>"; };
+		9DF13C461C89DAC80046AD15 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = KLCPopup/FontAwesome.ttf; sourceTree = "<group>"; };
+		9DF13C471C89DAC80046AD15 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+FontAwesome.h"; path = "KLCPopup/NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		9DF13C481C89DAC80046AD15 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+FontAwesome.m"; path = "KLCPopup/NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		9DF13C491C89DAC80046AD15 /* UIButton+Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+Bootstrap.h"; path = "KLCPopup/UIButton+Bootstrap.h"; sourceTree = "<group>"; };
+		9DF13C4A1C89DAC80046AD15 /* UIButton+Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Bootstrap.m"; path = "KLCPopup/UIButton+Bootstrap.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +226,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3AC9AF1C94735500BFEC07 /* iAd.framework in Frameworks */,
+				9D1391AA1C8B1EDB00F1924F /* MessageUI.framework in Frameworks */,
+				9D1391A81C8B1ECE00F1924F /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +252,9 @@
 		9D020FCB1C7B52B900E4D3F1 = {
 			isa = PBXGroup;
 			children = (
+				9D3AC9AE1C94735500BFEC07 /* iAd.framework */,
+				9D1391A91C8B1EDB00F1924F /* MessageUI.framework */,
+				9D1391A71C8B1ECE00F1924F /* Social.framework */,
 				9D020FD61C7B52B900E4D3F1 /* Memes Creator */,
 				9D020FF01C7B52B900E4D3F1 /* Memes CreatorTests */,
 				9D020FFB1C7B52B900E4D3F1 /* Memes CreatorUITests */,
@@ -103,12 +277,17 @@
 			children = (
 				9D020FDA1C7B52B900E4D3F1 /* AppDelegate.h */,
 				9D020FDB1C7B52B900E4D3F1 /* AppDelegate.m */,
-				9D020FDD1C7B52B900E4D3F1 /* ViewController.h */,
-				9D020FDE1C7B52B900E4D3F1 /* ViewController.m */,
 				9D020FE01C7B52B900E4D3F1 /* Main.storyboard */,
-				9D020FE31C7B52B900E4D3F1 /* Assets.xcassets */,
+				9D82B3E51C9007C30088E67C /* ImageFromCustom.h */,
+				9D82B3E61C9007C30088E67C /* ImageFromCustom.m */,
+				9D02101A1C7C04ED00E4D3F1 /* Controllers */,
+				9D0210161C7BFBC000E4D3F1 /* Custom Views */,
 				9D020FE51C7B52B900E4D3F1 /* LaunchScreen.storyboard */,
 				9D020FE81C7B52B900E4D3F1 /* Info.plist */,
+				9D020FE31C7B52B900E4D3F1 /* Assets.xcassets */,
+				9DE0E5A11C932808006A14C3 /* bg.jpg */,
+				9D9856B21C8D696800FB0FCD /* Memes Pack */,
+				9DF13C451C89DA5B0046AD15 /* Libs */,
 				9D020FD71C7B52B900E4D3F1 /* Supporting Files */,
 			);
 			path = "Memes Creator";
@@ -118,6 +297,8 @@
 			isa = PBXGroup;
 			children = (
 				9D020FD81C7B52B900E4D3F1 /* main.m */,
+				9D1391AE1C8C73C200F1924F /* ImageLibrary.plist */,
+				9D82B4161C9058EA0088E67C /* manuallyData.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +319,142 @@
 				9D020FFE1C7B52B900E4D3F1 /* Info.plist */,
 			);
 			path = "Memes CreatorUITests";
+			sourceTree = "<group>";
+		};
+		9D0210161C7BFBC000E4D3F1 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				9DE0E5961C92BAA7006A14C3 /* CustomTableView.h */,
+				9DE0E5971C92BAA7006A14C3 /* CustomTableView.m */,
+				9D0210171C7BFC0800E4D3F1 /* CustomCell.h */,
+				9D0210181C7BFC0800E4D3F1 /* CustomCell.m */,
+				9D0210981C814D8800E4D3F1 /* CustomLabel.h */,
+				9D0210991C814D8800E4D3F1 /* CustomLabel.m */,
+				9DBCF7631C86E559006F0541 /* SettingsView.xib */,
+				9DBCF7651C86E5D1006F0541 /* SettingsView.h */,
+				9DBCF7661C86E5D1006F0541 /* SettingsView.m */,
+				9DF13C431C8974300046AD15 /* FontsView.xib */,
+				9D1391A51C8AE3B300F1924F /* ShareView.xib */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		9D02101A1C7C04ED00E4D3F1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D02104C1C7C17B500E4D3F1 /* MemePack.h */,
+				9D02104D1C7C17B500E4D3F1 /* MemePack.m */,
+				9D02104F1C7C589200E4D3F1 /* EditMeme.h */,
+				9D0210501C7C589200E4D3F1 /* EditMeme.m */,
+				9D82B3E81C900EF30088E67C /* ImageCustom.h */,
+				9D82B3E91C900EF30088E67C /* ImageCustom.m */,
+				9D82B4131C9015EC0088E67C /* PageViewController.h */,
+				9D82B4141C9015EC0088E67C /* PageViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9D235A401C869FE60071BB7C /* KLCPopup */ = {
+			isa = PBXGroup;
+			children = (
+				9D235A411C869FE60071BB7C /* KLCPopup.h */,
+				9D235A421C869FE60071BB7C /* KLCPopup.m */,
+			);
+			path = KLCPopup;
+			sourceTree = "<group>";
+		};
+		9D82B40F1C90136B0088E67C /* VTPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D82B4101C90136B0088E67C /* VTPageViewController.h */,
+				9D82B4111C90136B0088E67C /* VTPageViewController.m */,
+			);
+			path = VTPageViewController;
+			sourceTree = "<group>";
+		};
+		9D9856B21C8D696800FB0FCD /* Memes Pack */ = {
+			isa = PBXGroup;
+			children = (
+				9D3AC93F1C944B0C00BFEC07 /* anti_joke_chicken.jpg */,
+				9D3AC9401C944B0C00BFEC07 /* arrow_in_knee.jpg */,
+				9D3AC9411C944B0C00BFEC07 /* baby_troll.jpg */,
+				9D3AC9311C944A8300BFEC07 /* aint_that_some_shit.jpg */,
+				9D3AC9321C944A8300BFEC07 /* alien.jpg */,
+				9D3AC9331C944A8300BFEC07 /* angry_head_shake.jpg */,
+				9D3AC92B1C944A0100BFEC07 /* advice_dog.jpg */,
+				9D3AC9451C944B5000BFEC07 /* bad_advice_cat.jpg */,
+				9D3AC9461C944B5000BFEC07 /* bad_luck_brian.jpg */,
+				9D3AC9471C944B5000BFEC07 /* beer_guy.jpg */,
+				9D3AC92C1C944A0100BFEC07 /* advice_god.jpg */,
+				9D3AC9371C944AA500BFEC07 /* angry_mom.jpg */,
+				9D3AC9381C944AA500BFEC07 /* angry_mouth.jpg */,
+				9D3AC9391C944AA500BFEC07 /* angry_shaking.jpg */,
+				9D3AC93A1C944AA500BFEC07 /* angry_with_pc.jpg */,
+				9D3AC92D1C944A0100BFEC07 /* advice_yoda_gives.jpg */,
+				9D3AC95F1C944D3F00BFEC07 /* crying.jpg */,
+				9D3AC9601C944D3F00BFEC07 /* cuteness_overload.jpg */,
+				9D3AC9291C9449D500BFEC07 /* 10guy.jpg */,
+				9D9856B31C8D696800FB0FCD /* angry_school_boy.jpg */,
+				9D3AC9511C944C6D00BFEC07 /* brant_rules.jpg */,
+				9D3AC9671C944DAB00BFEC07 /* desk_flip.jpg */,
+				9D3AC9681C944DAB00BFEC07 /* devil.jpg */,
+				9D3AC9551C944CB400BFEC07 /* chemistry_cat.jpg */,
+				9D3AC96B1C944DEE00BFEC07 /* look_from_bottom.jpg */,
+				9D3AC9591C944CEC00BFEC07 /* crazy_rage.jpg */,
+				9D3AC9631C944D8700BFEC07 /* depression_dog.jpg */,
+				9D3AC9641C944D8700BFEC07 /* derp_gusta.jpg */,
+				9D3AC95A1C944CEC00BFEC07 /* creepy_dark.jpg */,
+				9D3AC95B1C944CEC00BFEC07 /* cry_pc.jpg */,
+				9D3AC9561C944CB400BFEC07 /* chin_strapping.jpg */,
+				9D3AC9521C944C6D00BFEC07 /* broken_heart.jpg */,
+				9D9856B41C8D696800FB0FCD /* annoying_childhood_friend.jpg */,
+				9D3AC94B1C944BF200BFEC07 /* Beyon.jpg */,
+				9D3AC94F1C944C5200BFEC07 /* blue_y_u_no.jpg */,
+				9D3AC94C1C944BF200BFEC07 /* big_smile.jpg */,
+				9D9856B51C8D696800FB0FCD /* annoying_facebook_girl.jpg */,
+				9D9856B61C8D696800FB0FCD /* are_you_fucking_kidding_me_clean.jpg */,
+				9D9856B71C8D696800FB0FCD /* art_student_owl.jpg */,
+				9D9856B81C8D696800FB0FCD /* baby_godfather.jpg */,
+				9D9856B91C8D696800FB0FCD /* bear_grylls.jpg */,
+				9D9856BA1C8D696800FB0FCD /* bill_oreilly.jpg */,
+				9D9856BB1C8D696800FB0FCD /* Black.png */,
+				9D9856BC1C8D696800FB0FCD /* black_guy_gun.jpg */,
+				9D9856BD1C8D696800FB0FCD /* Blond.png */,
+				9D9856BE1C8D696800FB0FCD /* Blond2.png */,
+				9D9856BF1C8D696800FB0FCD /* brace_yourselves_x_is_coming.jpg */,
+				9D9856C01C8D696800FB0FCD /* brad_pitt.jpg */,
+				9D9856C11C8D696800FB0FCD /* business_cat.jpg */,
+				9D9856C21C8D696800FB0FCD /* butthurt_dweller.jpg */,
+				9D9856C31C8D696800FB0FCD /* college_liberal.jpg */,
+				9D9856C41C8D696800FB0FCD /* courage_wolf.jpg */,
+				9D9856C51C8D696800FB0FCD /* creepy_glasses_guy.jpg */,
+				9D9856C61C8D696800FB0FCD /* dat_ash.jpg */,
+				9D9856C71C8D696800FB0FCD /* dating_site_murderer.jpg */,
+				9D9856C81C8D696800FB0FCD /* disaster_girl.jpg */,
+			);
+			path = "Memes Pack";
+			sourceTree = "<group>";
+		};
+		9DF13C451C89DA5B0046AD15 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				9D82B40F1C90136B0088E67C /* VTPageViewController */,
+				9DF13C4E1C89DAD50046AD15 /* Button */,
+				9D235A401C869FE60071BB7C /* KLCPopup */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		9DF13C4E1C89DAD50046AD15 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				9DF13C461C89DAC80046AD15 /* FontAwesome.ttf */,
+				9DF13C471C89DAC80046AD15 /* NSString+FontAwesome.h */,
+				9DF13C481C89DAC80046AD15 /* NSString+FontAwesome.m */,
+				9DF13C491C89DAC80046AD15 /* UIButton+Bootstrap.h */,
+				9DF13C4A1C89DAC80046AD15 /* UIButton+Bootstrap.m */,
+			);
+			name = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +563,72 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D9856DB1C8D696800FB0FCD /* creepy_glasses_guy.jpg in Resources */,
+				9D3AC96C1C944DEE00BFEC07 /* look_from_bottom.jpg in Resources */,
+				9D3AC9491C944B5000BFEC07 /* bad_luck_brian.jpg in Resources */,
+				9D9856CD1C8D696800FB0FCD /* art_student_owl.jpg in Resources */,
+				9D3AC95E1C944CEC00BFEC07 /* cry_pc.jpg in Resources */,
+				9DF13C441C8974300046AD15 /* FontsView.xib in Resources */,
+				9D3AC9611C944D3F00BFEC07 /* crying.jpg in Resources */,
+				9D3AC96A1C944DAB00BFEC07 /* devil.jpg in Resources */,
+				9D9856CE1C8D696800FB0FCD /* baby_godfather.jpg in Resources */,
+				9D3AC92A1C9449D500BFEC07 /* 10guy.jpg in Resources */,
+				9D9856CB1C8D696800FB0FCD /* annoying_facebook_girl.jpg in Resources */,
+				9D3AC9481C944B5000BFEC07 /* bad_advice_cat.jpg in Resources */,
 				9D020FE71C7B52B900E4D3F1 /* LaunchScreen.storyboard in Resources */,
+				9D3AC94A1C944B5000BFEC07 /* beer_guy.jpg in Resources */,
+				9D3AC9651C944D8700BFEC07 /* depression_dog.jpg in Resources */,
+				9D3AC9581C944CB400BFEC07 /* chin_strapping.jpg in Resources */,
+				9D9856D61C8D696800FB0FCD /* brad_pitt.jpg in Resources */,
+				9D9856D01C8D696800FB0FCD /* bill_oreilly.jpg in Resources */,
+				9D9856D71C8D696800FB0FCD /* business_cat.jpg in Resources */,
+				9D9856D41C8D696800FB0FCD /* Blond2.png in Resources */,
 				9D020FE41C7B52B900E4D3F1 /* Assets.xcassets in Resources */,
+				9D3AC93E1C944AA500BFEC07 /* angry_with_pc.jpg in Resources */,
+				9D9856C91C8D696800FB0FCD /* angry_school_boy.jpg in Resources */,
+				9D3AC93B1C944AA500BFEC07 /* angry_mom.jpg in Resources */,
+				9D3AC9571C944CB400BFEC07 /* chemistry_cat.jpg in Resources */,
+				9D9856CA1C8D696800FB0FCD /* annoying_childhood_friend.jpg in Resources */,
+				9D3AC9421C944B0C00BFEC07 /* anti_joke_chicken.jpg in Resources */,
+				9D3AC9431C944B0C00BFEC07 /* arrow_in_knee.jpg in Resources */,
+				9D3AC9531C944C6D00BFEC07 /* brant_rules.jpg in Resources */,
+				9D3AC94D1C944BF200BFEC07 /* Beyon.jpg in Resources */,
+				9D9856DE1C8D696800FB0FCD /* disaster_girl.jpg in Resources */,
+				9D3AC9441C944B0C00BFEC07 /* baby_troll.jpg in Resources */,
+				9D9856DD1C8D696800FB0FCD /* dating_site_murderer.jpg in Resources */,
+				9D9856DC1C8D696800FB0FCD /* dat_ash.jpg in Resources */,
+				9D3AC94E1C944BF200BFEC07 /* big_smile.jpg in Resources */,
+				9D9856D21C8D696800FB0FCD /* black_guy_gun.jpg in Resources */,
+				9D3AC9661C944D8700BFEC07 /* derp_gusta.jpg in Resources */,
+				9DBCF7641C86E559006F0541 /* SettingsView.xib in Resources */,
+				9D3AC95C1C944CEC00BFEC07 /* crazy_rage.jpg in Resources */,
+				9D9856D91C8D696800FB0FCD /* college_liberal.jpg in Resources */,
+				9D3AC9501C944C5200BFEC07 /* blue_y_u_no.jpg in Resources */,
+				9D3AC95D1C944CEC00BFEC07 /* creepy_dark.jpg in Resources */,
+				9DF13C4B1C89DAC80046AD15 /* FontAwesome.ttf in Resources */,
+				9D82B4171C9058EA0088E67C /* manuallyData.plist in Resources */,
+				9D9856CC1C8D696800FB0FCD /* are_you_fucking_kidding_me_clean.jpg in Resources */,
+				9D1391A61C8AE3B300F1924F /* ShareView.xib in Resources */,
 				9D020FE21C7B52B900E4D3F1 /* Main.storyboard in Resources */,
+				9D3AC9691C944DAB00BFEC07 /* desk_flip.jpg in Resources */,
+				9D3AC9301C944A0100BFEC07 /* advice_yoda_gives.jpg in Resources */,
+				9D9856D81C8D696800FB0FCD /* butthurt_dweller.jpg in Resources */,
+				9D3AC92F1C944A0100BFEC07 /* advice_god.jpg in Resources */,
+				9D1391AF1C8C73C200F1924F /* ImageLibrary.plist in Resources */,
+				9D9856CF1C8D696800FB0FCD /* bear_grylls.jpg in Resources */,
+				9D9856D11C8D696800FB0FCD /* Black.png in Resources */,
+				9D9856D51C8D696800FB0FCD /* brace_yourselves_x_is_coming.jpg in Resources */,
+				9D3AC93D1C944AA500BFEC07 /* angry_shaking.jpg in Resources */,
+				9D3AC92E1C944A0100BFEC07 /* advice_dog.jpg in Resources */,
+				9D3AC9351C944A8300BFEC07 /* alien.jpg in Resources */,
+				9D9856DA1C8D696800FB0FCD /* courage_wolf.jpg in Resources */,
+				9D3AC9341C944A8300BFEC07 /* aint_that_some_shit.jpg in Resources */,
+				9D3AC9621C944D3F00BFEC07 /* cuteness_overload.jpg in Resources */,
+				9D3AC9541C944C6D00BFEC07 /* broken_heart.jpg in Resources */,
+				9D3AC93C1C944AA500BFEC07 /* angry_mouth.jpg in Resources */,
+				9D3AC9361C944A8300BFEC07 /* angry_head_shake.jpg in Resources */,
+				9DE0E5A21C932808006A14C3 /* bg.jpg in Resources */,
+				9D9856D31C8D696800FB0FCD /* Blond.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +653,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D020FDF1C7B52B900E4D3F1 /* ViewController.m in Sources */,
 				9D020FDC1C7B52B900E4D3F1 /* AppDelegate.m in Sources */,
 				9D020FD91C7B52B900E4D3F1 /* main.m in Sources */,
+				9DF13C4D1C89DAC80046AD15 /* UIButton+Bootstrap.m in Sources */,
+				9DF13C4C1C89DAC80046AD15 /* NSString+FontAwesome.m in Sources */,
+				9D82B4121C90136B0088E67C /* VTPageViewController.m in Sources */,
+				9D02104E1C7C17B500E4D3F1 /* MemePack.m in Sources */,
+				9D235A431C869FE60071BB7C /* KLCPopup.m in Sources */,
+				9D82B3EA1C900EF30088E67C /* ImageCustom.m in Sources */,
+				9D02109A1C814D8900E4D3F1 /* CustomLabel.m in Sources */,
+				9D0210191C7BFC0800E4D3F1 /* CustomCell.m in Sources */,
+				9D0210511C7C589200E4D3F1 /* EditMeme.m in Sources */,
+				9DE0E5981C92BAA7006A14C3 /* CustomTableView.m in Sources */,
+				9DBCF7671C86E5D1006F0541 /* SettingsView.m in Sources */,
+				9D82B3E71C9007C30088E67C /* ImageFromCustom.m in Sources */,
+				9D82B4151C9015EC0088E67C /* PageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +758,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,7 +796,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,7 +808,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Memes Creator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vinhthe.Memes-Creator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,7 +822,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Memes Creator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vinhthe.Memes-Creator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,6 +899,7 @@
 				9D0210031C7B52B900E4D3F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D0210041C7B52B900E4D3F1 /* Build configuration list for PBXNativeTarget "Memes CreatorTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +908,7 @@
 				9D0210061C7B52B900E4D3F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D0210071C7B52B900E4D3F1 /* Build configuration list for PBXNativeTarget "Memes CreatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +917,7 @@
 				9D0210091C7B52B900E4D3F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
