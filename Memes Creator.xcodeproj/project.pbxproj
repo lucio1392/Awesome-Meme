@@ -22,7 +22,6 @@
 		9D1391A81C8B1ECE00F1924F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1391A71C8B1ECE00F1924F /* Social.framework */; };
 		9D1391AA1C8B1EDB00F1924F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1391A91C8B1EDB00F1924F /* MessageUI.framework */; };
 		9D1391AF1C8C73C200F1924F /* ImageLibrary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D1391AE1C8C73C200F1924F /* ImageLibrary.plist */; };
-		9D1CBA121C97B1FD002E765A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1CBA111C97B1FD002E765A /* GoogleMobileAds.framework */; };
 		9D3AC92A1C9449D500BFEC07 /* 10guy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC9291C9449D500BFEC07 /* 10guy.jpg */; };
 		9D3AC92E1C944A0100BFEC07 /* advice_dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC92B1C944A0100BFEC07 /* advice_dog.jpg */; };
 		9D3AC92F1C944A0100BFEC07 /* advice_god.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3AC92C1C944A0100BFEC07 /* advice_god.jpg */; };
@@ -84,6 +83,7 @@
 		9D9856DC1C8D696800FB0FCD /* dat_ash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C61C8D696800FB0FCD /* dat_ash.jpg */; };
 		9D9856DD1C8D696800FB0FCD /* dating_site_murderer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C71C8D696800FB0FCD /* dating_site_murderer.jpg */; };
 		9D9856DE1C8D696800FB0FCD /* disaster_girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C81C8D696800FB0FCD /* disaster_girl.jpg */; };
+		9DB4C5891C9A59950003B063 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB4C5881C9A59950003B063 /* GoogleMobileAds.framework */; };
 		9DBCF7641C86E559006F0541 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DBCF7631C86E559006F0541 /* SettingsView.xib */; };
 		9DBCF7671C86E5D1006F0541 /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBCF7661C86E5D1006F0541 /* SettingsView.m */; };
 		9DE0E5981C92BAA7006A14C3 /* CustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0E5971C92BAA7006A14C3 /* CustomTableView.m */; };
@@ -139,7 +139,6 @@
 		9D1391A71C8B1ECE00F1924F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		9D1391A91C8B1EDB00F1924F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9D1391AE1C8C73C200F1924F /* ImageLibrary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageLibrary.plist; sourceTree = "<group>"; };
-		9D1CBA111C97B1FD002E765A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		9D3AC9291C9449D500BFEC07 /* 10guy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10guy.jpg; sourceTree = "<group>"; };
 		9D3AC92B1C944A0100BFEC07 /* advice_dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = advice_dog.jpg; sourceTree = "<group>"; };
 		9D3AC92C1C944A0100BFEC07 /* advice_god.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = advice_god.jpg; sourceTree = "<group>"; };
@@ -205,6 +204,7 @@
 		9D9856C61C8D696800FB0FCD /* dat_ash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dat_ash.jpg; sourceTree = "<group>"; };
 		9D9856C71C8D696800FB0FCD /* dating_site_murderer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dating_site_murderer.jpg; sourceTree = "<group>"; };
 		9D9856C81C8D696800FB0FCD /* disaster_girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = disaster_girl.jpg; sourceTree = "<group>"; };
+		9DB4C5881C9A59950003B063 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		9DBCF7631C86E559006F0541 /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
 		9DBCF7651C86E5D1006F0541 /* SettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsView.h; sourceTree = "<group>"; };
 		9DBCF7661C86E5D1006F0541 /* SettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsView.m; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D1CBA121C97B1FD002E765A /* GoogleMobileAds.framework in Frameworks */,
+				9DB4C5891C9A59950003B063 /* GoogleMobileAds.framework in Frameworks */,
 				9D1391AA1C8B1EDB00F1924F /* MessageUI.framework in Frameworks */,
 				9D1391A81C8B1ECE00F1924F /* Social.framework in Frameworks */,
 			);
@@ -252,7 +252,7 @@
 		9D020FCB1C7B52B900E4D3F1 = {
 			isa = PBXGroup;
 			children = (
-				9D1CBA111C97B1FD002E765A /* GoogleMobileAds.framework */,
+				9DB4C5881C9A59950003B063 /* GoogleMobileAds.framework */,
 				9D1391A91C8B1EDB00F1924F /* MessageUI.framework */,
 				9D1391A71C8B1ECE00F1924F /* Social.framework */,
 				9D020FD61C7B52B900E4D3F1 /* Memes Creator */,
