@@ -84,6 +84,7 @@
     
     NSString *documentDirectory = [documentDirectories firstObject];
     
+    NSLog(@"%@", documentDirectory);
     return  [documentDirectory stringByAppendingPathComponent:name];
     
 }

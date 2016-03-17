@@ -64,10 +64,12 @@
     [self createdSubviews];
 #pragma mark - hide keyboard when tapped View
     UITapGestureRecognizer *tapToHideKeyBoard = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(backgroundTapped:)];
+    tapToHideKeyBoard.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tapToHideKeyBoard];
     
     self.font = @"ArialRoundedMTBold";
     [self settingsButtons];
+    
 }
 
 -(void)settingsButtons{
@@ -285,15 +287,17 @@
         [stateAlertPicked setTitle:@"Ok" forState:UIControlStateNormal];
         [stateAlertPicked successStyle];
         [stateAlertPicked addAwesomeIcon:FAIconOk beforeTitle:YES];
-        [self.popupConfirmAlert showWithDuration:0.5];
+        [self.popupConfirmAlert showAtCenter:CGPointMake(self.view.bounds.size.width / 2.0, self.view.bounds.size.height / 2.0) inView:self.view withDuration:0.5];
     }];
     
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"CANCEL" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action){
         [stateAlertPicked setTitle:@"Cancel" forState:UIControlStateNormal];
         [stateAlertPicked warningStyle];
         [stateAlertPicked addAwesomeIcon:FAIconStop beforeTitle:YES];
-        [self.popupConfirmAlert showWithDuration:0.5];
+        [self.popupConfirmAlert showAtCenter:CGPointMake(self.view.bounds.size.width / 2.0, self.view.bounds.size.height / 2.0) inView:self.view withDuration:0.5];
     }];
+    
+    [self.view addSubview:self.popupConfirmAlert];
     
     [confirmSave addAction:okAction];
     [confirmSave addAction:cancelAction];
@@ -388,7 +392,6 @@
                                                maskType:KLCPopupMaskTypeDimmed
                                dismissOnBackgroundTouch:YES
                                   dismissOnContentTouch:NO];
-    [self.popupSettings show];
     
     [self.settingsView.okButton successStyle];
     [self.settingsView.okButton addAwesomeIcon:FAIconOk beforeTitle:YES];
@@ -406,6 +409,10 @@
     
     [self.pickingFontsButton setTitle:self.font forState:UIControlStateNormal];
     [self sizeState];
+    
+    [self.popupSettings showAtCenter:CGPointMake(self.view.bounds.size.width / 2.0, self.view.bounds.size.height / 2.0) inView:self.view];
+    
+    [self.view addSubview:self.popupSettings];
 }
 
 #pragma mark - Settings Controlls
@@ -530,6 +537,9 @@
     [self.popupFonts showAtCenter:CGPointMake(self.pickingFontsButton.center.x,
                                               self.pickingFontsButton.center.y - self.pickingFontsButton.bounds.size.height - (self.fontView.bounds.size.height / 2.0))
                            inView:self.pickingFontsButton];
+    
+    [self.settingsView addSubview:self.popupFonts];
+    
 }
 -(void)getFontsName{
     self.fontsName = [[NSMutableArray alloc]init];
@@ -578,7 +588,9 @@
                             dismissOnBackgroundTouch:YES
                                dismissOnContentTouch:NO];
     
-    [self.popupShare show];
+    [self.popupShare showAtCenter:CGPointMake(self.view.bounds.size.width / 2.0, self.view.bounds.size.height / 2.0) inView:self.view];
+    
+    [self.view addSubview:self.popupShare];
     
     self.shareView.frame = CGRectMake(0,
                                       0,
@@ -730,6 +742,7 @@
 -(void)done:(id)sender{
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
+
 
 @end
 

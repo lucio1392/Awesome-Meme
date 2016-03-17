@@ -13,9 +13,8 @@
 #import "ImageCustom.h"
 #import "ImageFromCustom.h"
 #import "UIButton+Bootstrap.h"
-#import <iAd/iAd.h>
 
-@interface PageViewController () <ADBannerViewDelegate>
+@interface PageViewController ()<GADBannerViewDelegate>
 @property(nonatomic, strong)UIBarButtonItem *camera, *library;
 @property(nonatomic, strong)UIImagePickerController *imagePicker;
 @property(nonatomic, strong)UIPopoverPresentationController *imagePickerPopover;
@@ -24,10 +23,10 @@
 @property(nonatomic, strong)MemePack *memePack;
 @property(nonatomic, strong)ImageCustom *imageCustomVC;
 @property(nonatomic, strong)VTPageViewController *pageVC;
+@property(strong, nonatomic)GADBannerView *gadBannerView;
 @end
 
 @implementation PageViewController{
-    ADBannerView *_banner;
     BOOL isBannerVisible;
 }
 
@@ -41,11 +40,12 @@
     self.navigationItem.title = @"Meme Pack";
     
     [self.navigationController.navigationBar setBackgroundColor:[UIColor colorWithRed:0.941 green:0.522 blue:0.184 alpha:1.00]];
+
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-   
+    
 }
 -(void)settingsRightBarButton{
     
@@ -215,7 +215,11 @@
     _pageVC.fontTitle = [UIFont fontWithName:@"Futura-CondensedMedium" size:15];
     _pageVC.fontSizeTitle = 17;
     
-    _pageVC.view.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 114);
+    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        _pageVC.view.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 154);
+    }else{
+        _pageVC.view.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 114);
+    }
     
     [self addChildViewController:_pageVC];
     
@@ -227,43 +231,43 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    _banner = [[ADBannerView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, 50)];
-    
-    _banner.delegate = self;
+    CGPoint bannerViewCenter = CGPointMake(0, self.view.bounds.size.height);
+    self.gadBannerView = [[GADBannerView alloc]initWithAdSize:kGADAdSizeSmartBannerPortrait origin:bannerViewCenter];
+    self.gadBannerView.delegate = self;
+    self.gadBannerView.adUnitID = @"ca-app-pub-6773018240487175/9372298041";
+    self.gadBannerView.rootViewController = self;
+    GADRequest *request = [GADRequest request];
+//    request.testDevices = @[kGADSimulatorID];
+    [self.gadBannerView loadRequest:request];
 }
 
-- (void)bannerViewDidLoadAd:(ADBannerView *)banner{
+// Called when an ad request loaded an ad.
+- (void)adViewDidReceiveAd:(GADBannerView *)bannerView {
     if (!isBannerVisible) {
-        if (_banner.superview == nil) {
-            [self.view addSubview:_banner];
+        if (self.gadBannerView.superview == nil) {
+            [self.view addSubview:self.gadBannerView];
         }
         
         [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
         
-        banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
+        bannerView.frame = CGRectOffset(bannerView.frame, 0, -bannerView.frame.size.height);
         
         [UIView commitAnimations];
         
         isBannerVisible = YES;
     }
-    
 }
-
-- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error{
-    
-    NSLog(@"error");
-    
+////
+////// Called when an ad request failed.
+- (void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(GADRequestError *)error {
     if (isBannerVisible) {
-        
         [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
         
-        banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height);
+        bannerView.frame = CGRectOffset(bannerView.frame, 0, bannerView.frame.size.height);
         
         [UIView commitAnimations];
         
         isBannerVisible = NO;
     }
-    
-    _pageVC.view.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height);
 }
 @end

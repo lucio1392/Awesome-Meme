@@ -12,13 +12,13 @@
 #import "UIButton+Bootstrap.h"
 #import "ImageFromCustom.h"
 
+
 @interface MemePack ()
 @property(nonatomic, strong)EditMeme *editMeme;
 @end
 
-@implementation MemePack
-
-
+@implementation MemePack{
+  }
 - (void)viewDidLoad {
     [super viewDidLoad];
     
