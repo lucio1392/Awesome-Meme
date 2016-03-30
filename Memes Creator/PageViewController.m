@@ -115,12 +115,6 @@
     
     UIImage *image = info[UIImagePickerControllerEditedImage];
     
-    self.editMeme = [self.storyboard instantiateViewControllerWithIdentifier:@"EditMemeStoryboard"];
-    
-    self.editMeme.imageFromLibAndCamera = image;
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
     if (!self.imageCustom) {
         self.imageCustom = [[NSMutableArray alloc]init];
     }
@@ -129,10 +123,8 @@
     NSString *documentsPath = [paths objectAtIndex:0];
     NSString *plistPath = [documentsPath stringByAppendingPathComponent:@"manuallyData.plist"];
     
-    self.imageCustom = [[NSMutableArray alloc]initWithContentsOfFile:plistPath];
-    
     NSString *idName = [self createIDName];
-    
+
     //save name
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -146,15 +138,24 @@
     
     [self.imageCustom addObject:idName];
     
-    //save image
-    
     [self.imageCustom writeToFile:plistPath atomically:YES];
+    
+    self.imageCustom = [[NSMutableArray alloc]initWithContentsOfFile:plistPath];
+    //save image
     
     NSString *pathImage = [self archiveImage:idName];
     
     NSData *data = UIImageJPEGRepresentation(image, 0.5);
     
     [data writeToFile:pathImage atomically:YES];
+    
+    
+    self.editMeme = [self.storyboard instantiateViewControllerWithIdentifier:@"EditMemeStoryboard"];
+    
+    self.editMeme.imageFromLibAndCamera = image;
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+
     
     if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
         
@@ -167,8 +168,6 @@
         [self presentViewController:nav animated:YES completion:^{
             
             _imageCustomVC.arrayRoot = [[NSMutableArray alloc]initWithContentsOfFile:plistPath];
-            [_imageCustomVC.tableView reloadData];
-            
         }];
         
     }else{
@@ -176,6 +175,9 @@
         
         [self.navigationController pushViewController:self.editMeme animated:YES];
     }
+    
+    [_imageCustomVC.tableView reloadData];
+   
 }
 
 -(NSString*)createIDName{
@@ -192,7 +194,7 @@
     
     NSString *documentDirectory = [documentDirectories firstObject];
     
-    //    NSLog(@"dicrectory :%@", documentDirectory);
+    NSLog(@"dicrectory :%@", documentDirectory);
     
     return  [documentDirectory stringByAppendingPathComponent:name];
     

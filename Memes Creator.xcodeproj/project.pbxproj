@@ -83,7 +83,7 @@
 		9D9856DC1C8D696800FB0FCD /* dat_ash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C61C8D696800FB0FCD /* dat_ash.jpg */; };
 		9D9856DD1C8D696800FB0FCD /* dating_site_murderer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C71C8D696800FB0FCD /* dating_site_murderer.jpg */; };
 		9D9856DE1C8D696800FB0FCD /* disaster_girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9856C81C8D696800FB0FCD /* disaster_girl.jpg */; };
-		9DB4C5891C9A59950003B063 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB4C5881C9A59950003B063 /* GoogleMobileAds.framework */; };
+		9DB01E3D1C9EAEDA00E93186 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB01E3C1C9EAED900E93186 /* GoogleMobileAds.framework */; };
 		9DBCF7641C86E559006F0541 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DBCF7631C86E559006F0541 /* SettingsView.xib */; };
 		9DBCF7671C86E5D1006F0541 /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBCF7661C86E5D1006F0541 /* SettingsView.m */; };
 		9DE0E5981C92BAA7006A14C3 /* CustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0E5971C92BAA7006A14C3 /* CustomTableView.m */; };
@@ -204,7 +204,7 @@
 		9D9856C61C8D696800FB0FCD /* dat_ash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dat_ash.jpg; sourceTree = "<group>"; };
 		9D9856C71C8D696800FB0FCD /* dating_site_murderer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dating_site_murderer.jpg; sourceTree = "<group>"; };
 		9D9856C81C8D696800FB0FCD /* disaster_girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = disaster_girl.jpg; sourceTree = "<group>"; };
-		9DB4C5881C9A59950003B063 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		9DB01E3C1C9EAED900E93186 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		9DBCF7631C86E559006F0541 /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
 		9DBCF7651C86E5D1006F0541 /* SettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsView.h; sourceTree = "<group>"; };
 		9DBCF7661C86E5D1006F0541 /* SettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsView.m; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB4C5891C9A59950003B063 /* GoogleMobileAds.framework in Frameworks */,
+				9DB01E3D1C9EAEDA00E93186 /* GoogleMobileAds.framework in Frameworks */,
 				9D1391AA1C8B1EDB00F1924F /* MessageUI.framework in Frameworks */,
 				9D1391A81C8B1ECE00F1924F /* Social.framework in Frameworks */,
 			);
@@ -252,7 +252,7 @@
 		9D020FCB1C7B52B900E4D3F1 = {
 			isa = PBXGroup;
 			children = (
-				9DB4C5881C9A59950003B063 /* GoogleMobileAds.framework */,
+				9DB01E3C1C9EAED900E93186 /* GoogleMobileAds.framework */,
 				9D1391A91C8B1EDB00F1924F /* MessageUI.framework */,
 				9D1391A71C8B1ECE00F1924F /* Social.framework */,
 				9D020FD61C7B52B900E4D3F1 /* Memes Creator */,
@@ -524,7 +524,7 @@
 				TargetAttributes = {
 					9D020FD31C7B52B900E4D3F1 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = NW9D67J4FE;
+						DevelopmentTeam = 364CX8AM3K;
 					};
 					9D020FEC1C7B52B900E4D3F1 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -813,11 +813,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Memes",
+					Creator,
 				);
 				INFOPLIST_FILE = "Memes Creator/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vinhthe.Memes-Creator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vinhthephamtran.Memes-Creator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -831,11 +833,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Memes",
+					Creator,
 				);
 				INFOPLIST_FILE = "Memes Creator/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vinhthe.Memes-Creator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vinhthephamtran.Memes-Creator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
